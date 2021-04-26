@@ -6,7 +6,7 @@ char *getstring(char *str)
 {
     str = (char *)calloc(20, 1);
     printf("\nEnter the string : ");
-    scanf("%s", str);
+    gets(str);
 
     return str;
 }
