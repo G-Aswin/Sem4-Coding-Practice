@@ -1,0 +1,29 @@
+/*****************************************************************************************************
+Preliminary :: Write C functions ( userdefined) to implement basic string manipulations such as 
+string length, string compare, string concatination, finsing sub string etc 
+/*****************************************************************************************************
+
+/*****************************************************************************************************
+1. Write a program to reverse individual words in a given line of string 
+
+Input :  india is great 
+output : aidni si taerg  
+****************************************************************************************************
+
+*****************************************************************************************************
+ 2.	Write a program to check if two given String is the anagram of 
+	each other( string is saved in a structure)
+
+struct str
+{
+    char cont[100];
+};
+
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
+typically using all the original letters exactly once. 
+Example
+Race =care
+Eleven plus two = Twelve plus one
+Note inbuilt functions strcmp,strlen & strcpy can be used */
+*****************************************************************************************************
+
