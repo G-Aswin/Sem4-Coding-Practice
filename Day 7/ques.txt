@@ -1,0 +1,32 @@
+1. Write a program to return the ascii value for a character 
+input : A  output: 65
+input : a  output: 97
+input :    output: 32   (Spac)
+
+/***************************
+2. Write a program that returns the max occured character in the given line of input 
+   ascii for space is 32
+
+input : every example is unique
+output: every example is unique
+
+
+/***************************
+3. Write a program that returns the word count in a given sentence 
+   ascii for space is 32
+ input:every exampl is unique in its way
+ output : 7 
+
+/***************************
+4.  Number game  :: Input an element ( string, number etc) and if the input is a number 
+then accept, if the input is "done" then stop  accepting, 
+otherwise accept the next element and so on.
+Use the ele,ent "done" to stop accepting input and return the largest
+ and smallest element recieved 
+
+Sample input pattern    111 345 hello  356 678 111 999 bye 165 done
+output: the smallest is 111 the largest is 999 
+
+Hint Explore the usage of atoi function 
+don use integer array !!!!!!
+/***************************
