@@ -1,0 +1,52 @@
+*************************
+1. Write a program that declares and intializes a strucutre variable.
+print the values of that structure variable
+Consider :: the use case of a book stall and following details
+book_id, book_title, author, price*/
+*************************
+ 2. Write a program to do the following (Use  array of structures)
+    a. Create a book database (title, author, rice, no_pages)
+    b. Update the book price based on the title.
+    c. Display appropriate message if updation fails.
+ 
+ ************************/
+*************************
+3. Complete the following code segment with appropriate C statements 
+*************************
+#include <stdio.h>
+struct book
+{
+    char title[10];
+    char author[10];
+    float price;
+    int no_pages;
+};
+
+void read(struct book *);
+void print(struct book *);
+
+int main()
+{
+   struct book bk;
+   struct book *sptr=&bk;
+   read(sptr);
+   print(sptr);
+   return 0;     
+}      
+   
+ void read() 
+{
+     printf("Enter the title, author name, price and number of pages in order");
+     scanf("%s%s%f%d",                     );
+}
+
+void print() 
+{
+    printf("The book details are\n");
+    printf("\n%s\t%s\t%f\t%d",             ); 
+}
+
+
+***EXTRA***
+write a program structure within a structure to save the following details  EMP(empid,ename{efname,emidname,elastname},esal, esal{ebasic,ehra,eallow, etotalsal},edesig,edeptno)
+ename{efname,emidname,elastname} & esal{ebasic,ehra,eallow, etotalsal},edesig,edeptno) are structures within EMP
