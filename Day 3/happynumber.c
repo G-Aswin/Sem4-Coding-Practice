@@ -12,12 +12,7 @@ int next_happy_number(int num)
         num /= 10;
     }
     
-    // printf("%d\n", sum);
-    
-    if (sum != 4)
-        return sum;
-    else
-        return -1;
+    return sum;
 }
 
 int main()
@@ -26,12 +21,12 @@ int main()
     printf("\nEnter a number to check if its a happy number : ");
     scanf("%d", &num);
     
-    while (num != -1 && num != 1)
+    while (num != 4 && num != 1)
     {
         num = next_happy_number(num);
     }
     
-    if (num == -1)
+    if (num == 4)
         printf("\nIts an unhappy number.\n");
     else 
         printf("\nIt is a happy number!\n");
