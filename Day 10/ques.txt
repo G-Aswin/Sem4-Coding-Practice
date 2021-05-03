@@ -1,0 +1,22 @@
+1. Program to save names in a SLL, names in the list must be saved in ascending order based on ASCII value 
+struct node 
+{ 
+	char name[20];
+	struct node *link;
+}
+
+2. Write separate functions to delete a node from SLL based on i) position ii) based on name use the previously defined structure.
+
+3. write a program to merge two SLL and the result must be sorted 
+ 
+struct node 
+{ 
+	int empid;
+	struct node *link; 
+}
+
+4. write a program in SLL to remove duplicate nodes 
+Input: 5, 8 , 7 , 1, 7, 8
+Output:
+Unique elem in SLL: 5, 8 , 7 , 1
+Elem which are repeated in SLL: 8,7
