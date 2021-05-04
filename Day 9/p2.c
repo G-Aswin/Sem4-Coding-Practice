@@ -10,7 +10,7 @@ int* push(int stack[], int *top)
 
     if (*top == MAX - 1)
     {
-        stack = (int *)realloc(stack, (*top + 1)*sizeof(int));
+        stack = (int *)realloc(stack, (*top*2)*sizeof(int));
         *top = *top + 1; 
         stack[*top] = ele;
         return stack;

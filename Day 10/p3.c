@@ -68,9 +68,9 @@ void display(NODE head)
 }
 
 
-NODE merge(NODE l1, NODE l2, NODE res)
+NODE merge(NODE first, NODE second, NODE res)
 {
-    NODE p1 = l1, p2 = l2;
+    NODE p1 = first, p2 = second;
     res = getnode();
     res->link = NULL;
     
@@ -132,7 +132,7 @@ NODE merge(NODE l1, NODE l2, NODE res)
 
 int main()
 {
-    NODE l1, l2, merged;
+    NODE first, second, merged;
     int ch, n;
     char name[20];
 
@@ -143,28 +143,28 @@ int main()
 
         switch(ch)
         {
-            case 1: l1 = NULL;
+            case 1: first = NULL;
                     printf("\nNumber of nodes for List1? : ");
                     scanf("%d", &n);
                     for (int i = 0; i < n; i++)
-                        l1 = insert_sorted(l1);
+                        first = insert_sorted(first);
                     
                     printf("\nFinished list 1:");
-                    display(l1);
+                    display(first);
                     break;
 
-            case 2: l2 = NULL;
+            case 2: second = NULL;
                     printf("\nNumber of nodes for List2? : ");
                     scanf("%d", &n);
                     for (int i = 0; i < n; i++)
-                        l2 = insert_sorted(l2);
+                        second = insert_sorted(second);
 
                     printf("\nFinished list 2:");
-                    display(l2);
+                    display(second);
                     break;
 
             case 3: merged = NULL;
-                    merged = merge(l1, l2, merged);
+                    merged = merge(first, second, merged);
                     printf("\nThe merged SLL is : ");
                     display(merged);
                     break;
