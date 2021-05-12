@@ -85,8 +85,6 @@ NODE remove_duplicates(NODE head)
 }
 
 
-
-
 int main()
 {
     NODE l1;
